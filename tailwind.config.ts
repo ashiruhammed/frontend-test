@@ -18,7 +18,7 @@ const config: Config = {
         // manrope: ['"Manrope", sans-serif'],
       },
       maxWidth: {
-        "max-width": "1200px",
+        "max-width": "1100px",
       },
       colors: {
         primary: {
