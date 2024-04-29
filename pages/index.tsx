@@ -5,6 +5,7 @@ import React from "react";
 import Chart from "@/components/icon/ChartIcon";
 import FoodIcon from "@/components/icon/FoodIcon";
 import SavingsIcon from "@/components/icon/SavingsIcon";
+import NairaIcon from "@/components/icon/NairaIcon";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,9 @@ export default function Home() {
               Budget
             </h1>
             <div className="mt-7 px-6">
-              <p className="text-primary-gray text-sm">Monthly Budget</p>
+              <p className="text-primary-gray text-sm flex gap-2 items-center">
+                <NairaIcon width={20} height={20} /> Monthly Budget
+              </p>
               <div className="rounded-md bg-white shadow-md mt-3">
                 <p className="text-primary text-3xl font-bold px-5 py-2 md:py-4 md:px-6 md:text-4xl">
                   ₦120,000
@@ -107,7 +110,7 @@ function CategoryCard({
   spent: number | string;
 }) {
   return (
-    <div className="flex gap-5 items-center w-full justify-between px-6 max-w-16">
+    <div className="flex  items-center w-full justify-between px-6">
       <div className="flex gap-4 items-center">
         <Icon width={60} height={60} />
         <div>
